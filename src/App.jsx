@@ -24,7 +24,7 @@ function App() {
               <Route path='dogs/login/*' element={<Login />} />
               <Route path='dogs/foto/:id' element={<Photo />} />
               <Route path='dogs/perfil/:user' element={<UserProfile />} />
-              <Route path='*' element={<NotFound />} />
+              <Route path='dogs/*' element={<NotFound />} />
               <Route
                 path='dogs/conta/*'
                 element={
