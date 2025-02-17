@@ -10,10 +10,10 @@ const UserHeader = () => {
   React.useEffect(() => {
     const { pathname } = location;
     switch (pathname) {
-      case '/conta/postar':
+      case '/dogs/conta/postar':
         setTitle('Poste sua foto');
         break;
-      case '/conta/estatisticas':
+      case '/dogs/conta/estatisticas':
         setTitle('Estatísticas');
         break;
       default:
