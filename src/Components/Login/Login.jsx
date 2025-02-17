@@ -11,15 +11,15 @@ import NotFound from '../NotFound';
 const Login = () => {
   const { login } = React.useContext(UserContext);
 
-  if (login === true) return <Navigate to='/conta' />;
+  if (login === true) return <Navigate to='/dogs/conta' />;
   return (
     <section className={styles.login}>
       <div className={styles.forms}>
         <Routes>
-          <Route path='/' element={<LoginForm />} />
-          <Route path='criar' element={<LoginCreate />} />
-          <Route path='perdeu' element={<LoginPasswordLost />} />
-          <Route path='resetar' element={<LoginPasswordReset />} />
+          <Route path='login' element={<LoginForm />} />
+          <Route path='login/criar' element={<LoginCreate />} />
+          <Route path='login/perdeu' element={<LoginPasswordLost />} />
+          <Route path='login/resetar' element={<LoginPasswordReset />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
