@@ -16,11 +16,11 @@ const Login = () => {
     <section className={styles.login}>
       <div className={styles.forms}>
         <Routes>
-          <Route path='dogs' end element={<LoginForm />} />
-          <Route path='dogs/criar' element={<LoginCreate />} />
-          <Route path='dogs/perdeu' element={<LoginPasswordLost />} />
-          <Route path='dogs/resetar' element={<LoginPasswordReset />} />
-          {/* <Route path='*' element={<NotFound />} /> */}
+          <Route path='/' element={<LoginForm />} />
+          <Route path='criar' element={<LoginCreate />} />
+          <Route path='perdeu' element={<LoginPasswordLost />} />
+          <Route path='resetar' element={<LoginPasswordReset />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </section>
