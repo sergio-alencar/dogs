@@ -20,7 +20,7 @@ const Login = () => {
           <Route path='dogs/criar' element={<LoginCreate />} />
           <Route path='dogs/perdeu' element={<LoginPasswordLost />} />
           <Route path='dogs/resetar' element={<LoginPasswordReset />} />
-          <Route path='*' element={<NotFound />} />
+          {/* <Route path='dogs/*' element={<NotFound />} /> */}
         </Routes>
       </div>
     </section>
